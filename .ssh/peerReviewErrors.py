@@ -15,14 +15,10 @@ def displayIntro():
 	is greedy and hungry, and will eat you on sight.''')
 	print()
 
-def chooseCave():
-    cave = ''
-	while cave != '1' and cave != '2':
-		print('Which cave will you go into? (1 or 2)')
-		cave = input()
-
-	return caves
-
+def chosenCave():
+    cave = input ('Which Cave will you go into? (1 or 2)')
+    while cave !='1' and cave != '2':
+            return caves
 def checkCave(chosenCave):
 	print('You approach the cave...')
 	#sleep for 2 seconds
@@ -39,16 +35,19 @@ def checkCave(chosenCave):
 	if chosenCave == str(friendlyCave):
 		print('Gives you his treasure!')
 	else:
-		print 'Gobbles you down in one bite!'
-
+		print ('Gobbles you down in one bite!')
 playAgain = 'yes'
-while playAgain = 'yes' or playAgain = 'y':
-	displayIntro()
-	caveNumber = choosecave()
-	checkCave(caveNumber)
-    
-	print('Do you want to play again? (yes or no)')
-	playAgain = input()
-	if playAgain == "no":
-		print("Thanks for planing")
+while True:
+        input('Do you want to play again? (yes or no)')
+        playAgain==int
+        if playAgain == 'no':
+                print("Thanks for playing")
+                break
+        playAgain == "yes" or playAgain == "y"
+        displayIntro()
+        caveNumber = chosenCave()
+        checkCave(caveNumber)
+
+        
+        
 
